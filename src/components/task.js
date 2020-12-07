@@ -2,7 +2,7 @@ export const Task = (taskObj) => {
   try {
     const div = document.createElement("div");
     div.classList.add("todo");
-    div.id = taskObj.taskID;
+    div.id = taskObj._id;
     if (taskObj.completed) {
       div.classList.add("completed");
     }
