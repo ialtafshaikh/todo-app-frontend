@@ -1,7 +1,7 @@
 import { endpoint } from "../endpoints.js";
 import { renderTodo } from "./renderTodo.js";
 
-export const filterCompleted = () => {
+export const filterUncompleted = () => {
   fetch(endpoint)
     .then((response) => response.json())
     .then((todos) => {
