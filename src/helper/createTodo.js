@@ -9,11 +9,16 @@ export const createTodo = (text) => {
     //store the task to the backend db
     const todoObj = new taskConstructor(text);
 
+    let myHeaders = new Headers();
+    myHeaders.append(
+      "Authorization",
+      "Bearer " + document.cookie.split("=")[1]
+    );
+    myHeaders.append("Content-Type", "application/json");
+
     fetch(endpoint, {
       method: "POST", // or 'PUT'
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: myHeaders,
       body: JSON.stringify(todoObj),
     })
       .then((response) => response.json())
