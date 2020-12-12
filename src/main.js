@@ -12,12 +12,22 @@ window.onload = () => {
 
 //onRefresh => check if todos are present or not
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("cookie", document.cookie);
-  window.location.href = "http://127.0.0.1:5500/todo-frontend/signup.html";
+  let myHeaders = new Headers();
+  myHeaders.append("Authorization", "Bearer " + document.cookie.split("=")[1]);
 
-  fetch(endpoint)
-    .then((response) => response.json())
-    .then((todos) => {
+  fetch(endpoint, { headers: myHeaders, mode: "cors" })
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      }
+      window.location.href = "http://127.0.0.1:5500/todo-frontend/login.html";
+      throw new Error("Please Login to continue");
+    })
+    .then(({ todos, currentUser }) => {
+      document.getElementById("userTitle").textContent =
+        currentUser.firstName[0].toUpperCase() +
+        currentUser.firstName.slice(1) +
+        "'s Todo List";
       todos.forEach((todo) => {
         renderTodo(todo);
       });
