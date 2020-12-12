@@ -12,6 +12,9 @@ window.onload = () => {
 
 //onRefresh => check if todos are present or not
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("cookie", document.cookie);
+  window.location.href = "http://127.0.0.1:5500/todo-frontend/signup.html";
+
   fetch(endpoint)
     .then((response) => response.json())
     .then((todos) => {
