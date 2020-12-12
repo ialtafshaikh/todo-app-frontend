@@ -12,8 +12,16 @@ export const deleteCheck = (event) => {
     todo.addEventListener("transitionend", () => {
       todo.remove();
     });
+
+    let myHeaders = new Headers();
+    myHeaders.append(
+      "Authorization",
+      "Bearer " + document.cookie.split("=")[1]
+    );
+
     fetch(endpoint + id, {
       method: "DELETE",
+      headers: myHeaders,
     })
       .then((response) => response.json())
       .then((data) => {
@@ -29,13 +37,19 @@ export const deleteCheck = (event) => {
     const todo = item.parentElement;
     const id = todo.id;
 
+    let myHeaders = new Headers();
+    myHeaders.append(
+      "Authorization",
+      "Bearer " + document.cookie.split("=")[1]
+    );
+    myHeaders.append("Content-Type", "application/json");
+
     if (todo.classList.toggle("completed")) {
       const todoObj = { completed: true };
+
       fetch(endpoint + id, {
         method: "PUT", // or 'PUT'
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: myHeaders,
         body: JSON.stringify(todoObj),
       })
         .then((response) => response.json())
@@ -49,9 +63,7 @@ export const deleteCheck = (event) => {
       const todoObj = { completed: false };
       fetch(endpoint + id, {
         method: "PUT", // or 'PUT'
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: myHeaders,
         body: JSON.stringify(todoObj),
       })
         .then((response) => response.json())
