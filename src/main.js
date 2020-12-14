@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (response.ok) {
         return response.json();
       }
-      window.location.href = `${document.location.origin}/todo-frontend/login.html`;
+      window.location.href = `${document.location.origin}/todo-app-frontend/login.html`;
       throw new Error("Please Login to continue");
     })
     .then(({ todos, currentUser }) => {
