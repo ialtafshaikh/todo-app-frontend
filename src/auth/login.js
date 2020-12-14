@@ -25,7 +25,7 @@ const formSubmission = (event) => {
       console.log("Success:", data);
       //   console.log("jwt=" + data.data[0]["jwt"]);
       document.cookie = "jwt=" + data.data[0]["jwt"];
-      window.location.href = "http://127.0.0.1:5500/todo-frontend/";
+      window.location.href = `${document.location.origin}/todo-frontend/`;
     })
     .catch((error) => {
       console.error("Error:", error);

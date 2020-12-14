@@ -23,7 +23,7 @@ const formSubmission = (event) => {
     .then((response) => response.json())
     .then((data) => {
       console.log("Success:", data);
-      window.location.href = "http://127.0.0.1:5500/todo-frontend/login.html";
+      window.location.href = `${document.location.origin}/todo-frontend/login.html`;
     })
     .catch((error) => {
       console.error("Error:", error);
