@@ -20,8 +20,27 @@ body {
 .navigation {
   background-color: transparent;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   padding: 0 20px;
   margin: 0;
+}
+
+.navigation-container ul {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.navigation-container li {
+  display: inline;
+  padding: 10px;
+}
+
+.navigation-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
 }
 
 main {
