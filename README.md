@@ -28,7 +28,12 @@ This is a frintend application connected with a todo backend.
 
 ### Prerequisites
 
-You need to have a basic knowledge of HTML, CSS and JavaScript, variables, arrays, functions and objects under your belt. Additionally, you need to have [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03),   [VScode](https://code.visualstudio.com/download) text editor installed on your computer.
+- You need to have a basic knowledge of HTML, CSS and JavaScript, variables, arrays, functions and objects under your belt. 
+- Additionally, you need to have [Git](https://gist.github.com/derhuerst/1b15ff4652a867391f03),   [VScode](https://code.visualstudio.com/download) text editor installed on your computer.
+- know the usage of **fetch-api** to make api calls
+- authorization headers
+- authorization token - **JWT**
+- cookies
 
 #### VS code Extension
 - Live server to run the project. Click [here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer#:~:text=Open%20a%20HTML%20file%20and,on%20Open%20with%20Live%20Server%20.&text=Open%20the%20Command%20Pallete%20by,Server%20to%20stop%20a%20server.) to see download instructions and how to use live server to tun the project
