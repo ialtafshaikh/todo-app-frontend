@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Todos</title>
+    <link rel="stylesheet" href="./styles/form.css" />
   </head>
   <body>
     <main>
+      <div class="form-container">
+        <h1 class="form-title">User Login Form</h1>
       <form
         action=""
         method="post"
@@ -24,7 +27,12 @@
           required
         />
 
-        <button type="submit" class="loginbtn">Login</button>
+        <input type="submit" class="loginbtn" value="Login" />
+        <hr />
+        <p>
+          don't have an account?
+          <a href="/blog-frontend/signup.html">SignUp Here</a>.
+        </p>
       </form>
     </main>
     <script src="./src/auth/login.js" type="module"></script>
