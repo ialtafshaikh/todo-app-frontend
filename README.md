@@ -58,13 +58,17 @@ To Host the Project I had used Github Pages. To learn more [visit her](https://t
 [live hosted link](https://ialtafshaikh.github.io/todo-app-frontend/)
 
 ## References
-- [Buildinga persistance to do app](https://freshman.tech/todo-list)
+- [learn about fetch-api](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [user input validation and sanitizing user input](https://linguinecode.com/post/validate-sanitize-user-input-javascript)
 - [JS Event Listener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener)
 - [browser local Strorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 - [css transition](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
 - [JS Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 - [JS Dom Manipulation](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents)
+- [what are COOKIES](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+- [jwt-intoduction](https://jwt.io/introduction/)
+- [about authorization headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization)
+- [Learn about what is CORS](https://developer.mozilla.org/en-US/docs/Glossary/CORS#Learn_more)
 
 ## Author
 
