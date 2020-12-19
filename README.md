@@ -1,8 +1,7 @@
 
-# Todo App
+# Todo Frontend App
 
-This is a Todo App I have created from scratch using HTML, CSS, and Javascript.
-
+This is a frintend application connected with a todo backend.
 
 ## Getting Started
 
