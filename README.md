@@ -5,17 +5,26 @@ This is a frintend application connected with a todo backend.
 
 ## Getting Started
 
+- [Check out the backend for todo](https://github.com/ialtafshaikh/todo-app-backend)
+- [Check the authentication backend code](https://github.com/ialtafshaikh/authentication-backend)
+
 **ToDo App** is simple and awesome **app** to organize your tasks with very easy to use interface. **ToDo** can help you to make **list** of your tasks
 
-- create a Task and displays to the user
-- check mark the completed task
-- delete the task
+- authenticate user can create a Task 
+- authenticate user can check mark their task
+- authenticate user can delete their the task
+- user can create an account- UI interface is provided for the same
+- user can login - UI interface is provided for the same
+- user can logout
 
 ## Additional Features
 
 1. Fully Mobile Responsive App
-2. data is persistence
+2. data is persistence on backend server
 3. user can filter the todos: All, Completed, Uncompleted
+4. powered by backend server
+5. data is stored in mongoDB Cloud
+6. can be use by multiple users
 
 ### Prerequisites
 
